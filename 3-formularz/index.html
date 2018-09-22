@@ -1,13 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Formularz</title>
 </head>
+
 <body>
-    <form action="form.php">
-        <input type="submit" value="send">
+    <form action="https://formspree.io/podrygala@cic.com" method="post">
+        <label>Imię <input type="text" name="name" /></label>
+
+        <br><br>
+
+        <label>Nazwisko <input type="text" name="last-name" /></label>
+
+        <br><br>
+
+        <label>Email <input type="text" name="mail" /></label>
+
+        <br><br>
+
+        <label>Phone number <input type="text" name="phone" /></label>
+
+        <br><br>
+
+        <label>Message <textarea name="message" rows="3" cols="33" maxlength="200" wrap="hard"></textarea></label>
+
+        <br><br>
+
+        <span>Płeć</span>
+        <label>Mężczyzna<input type="radio" name="gender" value="mężczyzna"></label>
+        <label>Kobieta<input type="radio" name="gender" value="kobieta"></label>
+
+        <br><br>
+
+        <label>Wojewodztwo
+            <select name="wojewodztwo">
+                <option value="mazowieckie">Mazowieckie</option>
+                <option value="podlaskie">Podlaskie</option>
+                <option value="pomorskie">Pomorskie</option>
+            </select>
+        </label>
+
+       <Br><Br>
+        <input type="submit" value="Send" />
     </form>
-    
+
 </body>
+
 </html>
